@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.athanasiosmoutsioulis.dissertation_project.MainActivity">
+    <!--<android.support.v7.widget.Toolbar android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"  />-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/rl_header"
+            android:background="@drawable/material_design_wallpaper">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img_fbPhoto"
+                android:src="@drawable/photo_profile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Student ID"
+                android:id="@+id/tv_id"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Facebook Name"
+                android:id="@+id/tv_fbName"
+                android:textColor="#fff"
+                android:layout_above="@+id/tv_id"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_header"
+            android:padding="3dp">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageButton"
+                android:src="@drawable/classes_icon"
+                android:scaleType="centerInside"
+                android:background="#ff8989" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:padding="3dp">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageButton2"
+                    android:src="@drawable/facebook"
+                    android:scaleType="centerInside"
+                    android:background="#3B5894"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageButton3"
+                    android:src="@drawable/calendar"
+                    android:scaleType="fitCenter"
+                    android:background="#f69051"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_below="@+id/rl_header"
+            android:layout_alignRight="@+id/rl_header"
+            android:layout_marginTop="-25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

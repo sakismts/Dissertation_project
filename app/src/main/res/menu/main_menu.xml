@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:id="@+id/calendar"
+        android:title="Import EDA's calendar"/>
+        <item  android:id="@+id/fbLogin"
+            android:title="Facebook profile"/>
+        <item  android:id="@+id/logout"
+            android:title="Logout"/>
+
+</menu>
