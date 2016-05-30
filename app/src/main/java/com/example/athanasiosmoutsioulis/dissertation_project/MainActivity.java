@@ -173,7 +173,11 @@ public class MainActivity extends AppCompatActivity {
         }else{
             //update the gui
             id.setText(sharedpreferences.getString("id","User"));
+
         }
+
+    }
+    private void test(){
 
     }
 
